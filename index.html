@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Database System Final Report Project</h1>
+        <p class="lead">Final project</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">張傑凱&邱高詮</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">關於此站</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">論壇連結</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">其他專題</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="container mt-5">
+        <h2 class="text-center mb-4">關於此站</h2>
+        <p>Welcome to my personal website! I am a passionate web developer with a focus on creating user-friendly and engaging web applications.</p>
+    </section>
+	
+	<section id="contact" class="container mt-5">
+    <h2 class="text-center mb-4">論壇連結</h2>
+    <p>討論有關本站的相關話題。</p>
+    <a href="index.php" class="btn btn-primary">進入論壇</a>
+</section>
+
+    <section id="portfolio" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">其他專題</h2>
+    
+            <div class="row">
+                <!-- 第一個專案 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 第二個專案 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 第三個專案 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of Project 3.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 可以繼續添加更多專案 -->
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script>
+
+        const loginBtn = document.getElementById('login-btn');
+      
+        const signupBtn = document.getElementById('signup-btn');
+      
+        const iframeContainer = document.getElementById('iframe-container');
+        
+        loginBtn.addEventListener('click', showLogin);
+        signupBtn.addEventListener('click', showSignup);
+        
+        // ...其他程式碼
+        function showLogin(){
+            iframeContainer.innerHTML = `
+            <iframe src="login.php"></iframe>
+            `;
+        }
+
+        function showSignup(){
+            iframeContainer.innerHTML = `  
+            <iframe src="sign up.php"></iframe>
+            `;
+        }
+    </script>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 張傑凱&邱高詮. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const registerForm = document.getElementById("registerForm");
+        const loginOption = document.getElementById("loginOption");
+        const registerOption = document.getElementById("registerOption");
+
+        loginOption.addEventListener("change", function () {
+            loginForm.style.display = "block";
+            registerForm.style.display = "none";
+        });
+
+        registerOption.addEventListener("change", function () {
+            loginForm.style.display = "none";
+            registerForm.style.display = "block";
+        });
+    </script>
+</body>
+</html>

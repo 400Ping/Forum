@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tobias-pfeifer-HD_FvJUr1Gw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#iframe-container {
+    width: 500px;
+    height: 500px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%; 
+  }
+
+#login-btn, 
+#signup-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+section#portfolio {
+    background-color: #141313;
+    color: #343232;
+    padding: 15em 0; /* 調整上下 padding 的數值 */
+}
+
+/* Portfolio 區域專案文字深色設定 */
+#portfolio .card-title {
+    color: #333; /* 或者你想使用的其他深色色碼 */
+}
+
+#portfolio .card-text {
+    color: #555; /* 或者你想使用的其他深色色碼 */
+}
+
+
+section#about {
+    padding: 15em 0; /* 調整上下 padding 的數值 */
+}
+/* 可以根據需要調整其他樣式 */
+
+
+/* 其他自訂樣式 */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #8bc34a;
+}
+
+section {
+    padding: 2em;
+}
+
+section h2 {
+    color: #ece7e7;
+}
+
+section p {
+    color: #ede8e8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #282626;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #8bc34a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #689f38;
+}
